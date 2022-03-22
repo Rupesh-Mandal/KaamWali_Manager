@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddWorkerActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/krona_one_regular"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Edit Worker"
+        android:textColor="@color/theam_color"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/add"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"            android:drawablePadding="10dp"
+                android:inputType="textPersonName"
+                android:textColor="@color/theam_color"
+                android:drawableTint="@color/theam_color"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:background="@drawable/login_signup_edittext_back"
+                android:elevation="@dimen/edit_text_elivation"
+                android:hint="Name"
+                android:padding="@dimen/edit_text_padding" />
+
+
+            <EditText
+                android:id="@+id/salary"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"            android:drawablePadding="10dp"
+                android:inputType="number"
+                android:textColor="@color/theam_color"
+                android:drawableTint="@color/theam_color"
+                android:drawableStart="@drawable/ic_baseline_attach_money_24"
+                android:background="@drawable/login_signup_edittext_back"
+                android:elevation="@dimen/edit_text_elivation"
+                android:hint="Salary"
+                android:padding="@dimen/edit_text_padding" />
+
+
+            <RadioGroup
+                android:id="@+id/genderRadioG"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Male"
+                    android:text="Male"
+                    android:textSize="20dp"/>
+
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Female"
+                    android:text="Female"
+                    android:textSize="20dp"/>
+
+
+            </RadioGroup>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="3dp"
+                android:background="@drawable/login_signup_edittext_back">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/job"
+                    android:tint="@color/theam_color"
+                    android:padding="10dp"/>
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/job"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:hint="Job"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="3dp"
+                android:orientation="vertical"
+                android:background="@drawable/login_signup_edittext_back">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*start date"
+                    android:textColor="@color/theam_color"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/start_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2020-23-23"
+                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:layout_margin="5dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/theam_color"
+                    android:drawableTint="@color/theam_color"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="3dp"
+                android:orientation="vertical"
+                android:background="@drawable/login_signup_edittext_back">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*end date"
+                    android:textColor="@color/theam_color"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/end_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2020-23-23"
+                    android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:layout_margin="5dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/theam_color"
+                    android:drawableTint="@color/theam_color"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/update_worker"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/login_signup_edittext_back"
+        android:backgroundTint="@color/theam_color"
+        android:elevation="@dimen/edit_text_elivation"
+        android:fontFamily="@font/krona_one_regular"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:text="Update Worker"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/krona_one_regular"
+            android:gravity="center"
+            android:text="Pay Salary"
+            android:textColor="@color/theam_color"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/pay_amt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_signup_edittext_back"
+            android:drawableStart="@drawable/ic_baseline_attach_money_24"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/theam_color"
+            android:elevation="@dimen/edit_text_elivation"
+            android:hint="Amount"
+            android:inputType="number"
+            android:padding="@dimen/edit_text_padding"
+            android:textColor="@color/theam_color" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_signup_edittext_back"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="*Pay Salary date"
+                android:textColor="@color/theam_color" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                android:drawableTint="@color/theam_color"
+                android:text="2020-23-23"
+                android:textColor="@color/theam_color"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/paySalary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_signup_edittext_back"
+            android:backgroundTint="@color/theam_color"
+            android:text="Pay Salary"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintTop_toBottomOf="@+id/delivery_address"
+            tools:layout_editor_absoluteX="10dp" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

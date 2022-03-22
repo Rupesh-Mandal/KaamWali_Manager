@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/bottom_sheet_shap.xml" value="0.2095" />
+        <entry key="app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.2095" />
+        <entry key="app/src/main/res/drawable/login_signup_edittext_back.xml" value="0.2095" />
+        <entry key="app/src/main/res/drawable/round.xml" value="0.2095" />
+        <entry key="app/src/main/res/layout/activity_add_worker.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_detaitl_worker.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_edit_worker.xml" value="0.19519927536231885" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/add_leave_bottomsheet.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/pay_salary_bottomsheet.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/worker_item.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
